@@ -1,0 +1,41 @@
+\RequirePackage{plautopatch}
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[platex,dvipdfmx]{jlreq}			% for platex
+% \documentclass[uplatex,dvipdfmx]{jlreq}		% for uplatex
+\usepackage{graphicx}
+\usepackage{bxtexlogo}
+
+\title{レポートタイトル}
+
+\author{学生番号XXX-XXXX アカリク太郎}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Cloud LaTeXへようこそ}
+
+Cloud LaTeXは，\LaTeX を使った文書の作成・管理をクラウド上で行えるWebサービスです．
+\LaTeX を使うと，複雑な数式
+\begin{equation}
+\frac{\pi}{2} =
+\left( \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx \right)^2 =
+\sum_{k=0}^{\infty} \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} =
+\prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1}
+\end{equation}
+を含んだ読みやすくきれいな文書作成ができます．
+
+本サービスは，\LaTeX 文書をリアルタイムに保存・コンパイルし，ユーザーアカウント別に管理します．
+そのため，本サービスにログインするだけで，どこからでも作業を再開でき，ファイルを持ち歩く必要はありません．
+また，様々な \LaTeX テンプレートが用意されているので，手軽に文書を作り始めることができます．
+\begin{figure}
+\centering
+\includegraphics[width=70mm]{figures/Sample.png}
+\caption{ここにキャプションを挿入します}
+\label{fig:model}
+\end{figure}
+
+Cloud LaTeXでは，作成されるPDFそのままのレイアウトで表示するPDFビューモードがあり，コンパイル画面を確認しながら文書を作成することができます（図\ref{fig:model}）
+日本語では， \pLaTeX / \upLaTeX / \LuaLaTeX でのコンパイルが可能です．
+また，日本語や英語文書作成だけでなく，中国語・ハングルに対応した \XeLaTeX のコンパイルも可能です．
+ぜひ使ってみてください．
+\end{document}
