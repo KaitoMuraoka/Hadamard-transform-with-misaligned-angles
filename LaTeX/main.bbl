@@ -1,9 +1,8 @@
 \begin{thebibliography}{1}
 
 \bibitem{QuantumDojo}
-Qulacs.
-\newblock Quantum native dojo.
-\newblock https://github.com/qulacs/quantum-native-dojob.
+Quantum native dojo.
+\newblock \url{https://github.com/qulacs/quantum-native-dojob}.
 
 \bibitem{BasicQuantumComputer}
 藤井啓祐.

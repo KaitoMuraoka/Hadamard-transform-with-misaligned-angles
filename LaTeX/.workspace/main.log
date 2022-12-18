@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 00:24
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 08:16
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -97,7 +97,10 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
 \bxlg@g@height=\dimen162
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-02-07 L3 backend support: dvipdfmx
  (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count195
@@ -116,85 +119,90 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 17.
-Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 17.
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 17.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 17.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 17.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 17.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 18.
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 18.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 18.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 18.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 18.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 18.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 18.
+(Font)              scaled to size 16.60605pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 18.
+(Font)              scaled to size 16.60605pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 18.
+(Font)              scaled to size 11.53198pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 18.
+(Font)              scaled to size 11.53198pt on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 18.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 18.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 18.
+(Font)              <6> on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 18.
+(Font)              scaled to size 5.76599pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 19.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 19.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
+(Font)              <5> on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 28.
+(Font)              scaled to size 6.72699pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 28.
+(Font)              scaled to size 4.805pt on input line 29.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: figures/p(k)graph.png Graphic file (type bmp)
 <figures/p(k)graph.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 49.
+(Font)              scaled to size 8.64899pt on input line 50.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 49.
+(Font)              scaled to size 8.64899pt on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 49.
+(Font)              <9> on input line 50.
  (./main.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\OT1/cmr/m/n/10 Qulacs.  Quan-tum na-tive dojo.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
-\OT1/cmr/m/n/10 https://github.com/qulacs/quantum-native-
+\OT1/cmtt/m/n/10 https : / / github . com / qulacs /
  []
 
 )
-Package plautopatch Info: No additional packages loaded on input line 55.
+Package plautopatch Info: No additional packages loaded on input line 56.
 
 No complaints by nag.
 [1
@@ -202,15 +210,15 @@ No complaints by nag.
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2827 strings out of 478739
- 51208 string characters out of 5858777
- 373553 words of memory out of 5000000
- 21238 multiletter control sequences out of 15000+600000
- 479346 words of font info for 74 fonts, out of 8000000 for 9000
+ 2917 strings out of 478739
+ 52525 string characters out of 5858777
+ 374657 words of memory out of 5000000
+ 21323 multiletter control sequences out of 15000+600000
+ 479795 words of font info for 77 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  68i,8n,76p,219b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 5108 bytes).
+Output written on main.dvi (1 page, 5152 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -219,7 +227,7 @@ The style file: junsrt.bst
 Database file #1: references.bib
 You've used 2 entries,
             2270 wiz_defined-function locations,
-            548 strings with 4238 characters,
+            548 strings with 4244 characters,
 and the built_in function-call counts, 347 in all, are:
 = -- 18
 > -- 8
@@ -262,5 +270,5 @@ is.kanji.str$ -- 15
 
 main.dvi -> main.pdf
 [1]
-88622 bytes written
+90654 bytes written
 
