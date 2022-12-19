@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 08:16
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 11:29
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -178,14 +178,14 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: figures/p(k)graph.png Graphic file (type bmp)
-<figures/p(k)graph.png>
+File: figures/sample.png Graphic file (type bmp)
+<figures/sample.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 50.
+(Font)              scaled to size 8.64899pt on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 50.
+(Font)              scaled to size 8.64899pt on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 50.
+(Font)              <9> on input line 51.
  (./main.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
@@ -202,7 +202,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  []
 
 )
-Package plautopatch Info: No additional packages loaded on input line 56.
+Package plautopatch Info: No additional packages loaded on input line 57.
 
 No complaints by nag.
 [1
@@ -211,14 +211,14 @@ No complaints by nag.
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  2917 strings out of 478739
- 52525 string characters out of 5858777
+ 52510 string characters out of 5858777
  374657 words of memory out of 5000000
  21323 multiletter control sequences out of 15000+600000
  479795 words of font info for 77 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  68i,8n,76p,219b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 5152 bytes).
+Output written on main.dvi (1 page, 5148 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -270,5 +270,5 @@ is.kanji.str$ -- 15
 
 main.dvi -> main.pdf
 [1]
-90654 bytes written
+89746 bytes written
 
