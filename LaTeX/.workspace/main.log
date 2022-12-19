@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 11:29
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 12:39
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -212,13 +212,13 @@ No complaints by nag.
 Here is how much of TeX's memory you used:
  2917 strings out of 478739
  52510 string characters out of 5858777
- 374657 words of memory out of 5000000
+ 374656 words of memory out of 5000000
  21323 multiletter control sequences out of 15000+600000
  479795 words of font info for 77 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  68i,8n,76p,219b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 5148 bytes).
+Output written on main.dvi (1 page, 5104 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -270,5 +270,5 @@ is.kanji.str$ -- 15
 
 main.dvi -> main.pdf
 [1]
-89746 bytes written
+89451 bytes written
 
