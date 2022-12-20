@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  19 DEC 2022 12:47
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  20 DEC 2022 22:27
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -100,17 +100,40 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen163
+\captionmargin=\dimen164
+\caption@leftmargin=\dimen165
+\caption@rightmargin=\dimen166
+\caption@width=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1\hskip 1zw\relax #2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1{\hskip 1zw\relax }#2\par \vskip \belowcaptionskip } on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count195
+\c@continuedfloat=\count196
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-02-07 L3 backend support: dvipdfmx
  (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count195
-\l__color_backend_stack_int=\count196
-\g__color_backend_stack_int=\count197
-\g__graphics_track_int=\count198
+\c__kernel_sys_dvipdfmx_version_int=\count197
+\l__color_backend_stack_int=\count198
+\g__color_backend_stack_int=\count199
+\g__graphics_track_int=\count266
 \l__pdf_internal_box=\box68
-\g__pdf_backend_object_int=\count199
-\g__pdf_backend_annotation_int=\count266
-\g__pdf_backend_link_int=\count267
+\g__pdf_backend_object_int=\count267
+\g__pdf_backend_annotation_int=\count268
+\g__pdf_backend_link_int=\count269
 )
 
 LaTeX Warning: Unused global option(s):
@@ -119,79 +142,85 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 18.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 18.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 18.
-Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 18.
-Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 18.
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 18.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 18.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 18.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 18.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 19.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 19.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 19.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 19.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 19.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 19.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 19.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 19.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 19.
+(Font)              scaled to size 16.60605pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 19.
+(Font)              scaled to size 16.60605pt on input line 20.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 19.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 19.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 19.
+(Font)              scaled to size 5.76599pt on input line 20.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 20.
+(Font)              scaled to size 11.53198pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 20.
+(Font)              scaled to size 11.53198pt on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 30.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 30.
+(Font)              <5> on input line 34.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 30.
+(Font)              scaled to size 6.72699pt on input line 34.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 30.
+(Font)              scaled to size 4.805pt on input line 34.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+
+Package caption Warning: \label without proper reference on input line 57.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 49.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 49.
+
+LaTeX Warning: Reference `fig:P(k)' on page 1 undefined on input line 49.
+
 File: figures/sample.png Graphic file (type bmp)
 <figures/sample.png>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 51.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 51.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 51.
- (./main.bbl
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 6.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 6.
-
+(./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\OT1/cmr/m/n/10 Qulacs.  Quan-tum na-tive dojo.
  []
@@ -201,24 +230,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 \OT1/cmtt/m/n/10 https : / / github . com / qulacs /
  []
 
-)
-Package plautopatch Info: No additional packages loaded on input line 57.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+])
+Package plautopatch Info: No additional packages loaded on input line 62.
 
 No complaints by nag.
-[1
+[2
 
+] (./main.aux)
 
-] (./main.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2917 strings out of 478739
- 52510 string characters out of 5858777
- 374656 words of memory out of 5000000
- 21323 multiletter control sequences out of 15000+600000
- 479795 words of font info for 77 fonts, out of 8000000 for 9000
+ 4236 strings out of 478739
+ 78210 string characters out of 5858777
+ 395112 words of memory out of 5000000
+ 22638 multiletter control sequences out of 15000+600000
+ 478910 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 68i,8n,76p,251b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,8n,76p,253b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 5112 bytes).
+Output written on main.dvi (2 pages, 5524 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -269,6 +307,6 @@ write$ -- 19
 is.kanji.str$ -- 15
 
 main.dvi -> main.pdf
-[1]
-89476 bytes written
+[1][2]
+93118 bytes written
 
