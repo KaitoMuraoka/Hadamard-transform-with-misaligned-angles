@@ -1,10 +1,15 @@
 \begin{thebibliography}{1}
 
 \bibitem{QuantumDojo}
-Quantum native dojo.
+Qulacs.
+\newblock Quantum native dojo.
 \newblock \url{https://github.com/qulacs/quantum-native-dojob}.
 
 \bibitem{BasicQuantumComputer}
+藤井啓祐.
+\newblock 量子コンピューターの基礎, 2018年6月.
+
+\bibitem{QuantumComputingFundamentalsAndPhysicsContacts}
 藤井啓祐.
 \newblock 量子コンピュータの基礎と物理の接点, 2017年6月8日.
 
