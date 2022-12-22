@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 13:50
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 13:57
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -193,7 +193,9 @@ See the caption package documentation for explanation.
 
 \c@caption@flags=\count276
 \c@continuedfloat=\count277
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-02-07 L3 backend support: dvipdfmx
  (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count278
@@ -212,29 +214,29 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 21.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 21.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 21.
-Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 21.
-Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 18.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -271,45 +273,46 @@ Package nag Info: Command \RaggedRight not defined, skipping amendment on input 
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 21.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 21.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 21.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 21.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 18.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 18.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 18.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 18.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 22.
+(Font)              scaled to size 16.60605pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 22.
+(Font)              scaled to size 16.60605pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 22.
+(Font)              scaled to size 11.53198pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 22.
+(Font)              scaled to size 11.53198pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 22.
+(Font)              scaled to size 5.76599pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 23.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 23.
+(Font)              scaled to size 11.53198pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 35.
+(Font)              scaled to size 6.72699pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 35.
+(Font)              scaled to size 4.805pt on input line 32.
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 41.
+(nag)                Use amsmath's align instead on input line 39.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 50.
+(nag)                Use amsmath's align instead on input line 47.
 
+Excluding 'comment' comment.
 File: figures/sample.png Graphic file (type bmp)
 <figures/sample.png>
-(./main.bbl
+ (./main.bbl
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
 )
-Package plautopatch Info: No additional packages loaded on input line 82.
+Package plautopatch Info: No additional packages loaded on input line 78.
 
 
 Package nag Warning: 2 complaints in total.
@@ -319,15 +322,15 @@ Package nag Warning: 2 complaints in total.
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5414 strings out of 478739
- 95232 string characters out of 5858777
- 428273 words of memory out of 5000000
- 23792 multiletter control sequences out of 15000+600000
+ 5468 strings out of 478739
+ 96346 string characters out of 5858777
+ 429169 words of memory out of 5000000
+ 23842 multiletter control sequences out of 15000+600000
  479730 words of font info for 77 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 59i,12n,63p,253b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,63p,237b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 7200 bytes).
+Output written on main.dvi (1 page, 7196 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -379,5 +382,5 @@ is.kanji.str$ -- 23
 
 main.dvi -> main.pdf
 [1]
-95298 bytes written
+95129 bytes written
 

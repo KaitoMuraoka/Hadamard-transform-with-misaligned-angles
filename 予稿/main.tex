@@ -1,17 +1,14 @@
 \RequirePackage{plautopatch}
 \RequirePackage[l2tabu, orthodox]{nag}
-
-% \documentclass[platex,dvipdfmx]{jlreq}			% for platex
-% \documentclass[platex,dvipdfmx, twocolumn]{jlreq}			% for platex
 \documentclass[platex,dvipdfmx, twocolumn]{jsarticle}			% for platex
 \usepackage[margin=20mm]{geometry}
-% \documentclass[uplatex,dvipdfmx]{jlreq}		% for uplatex
 \usepackage{graphicx}
 \usepackage{bxtexlogo}
 \usepackage{braket} % ブラケット
 \usepackage{amsmath} % 行列
 \usepackage{url}
 \usepackage{caption}
+\usepackage{comment}
 \pagestyle{empty} % ページ数を非表示
 
 \title{初期状態が不完全なグローバーのアルゴリズムの振る舞いについて}
@@ -36,7 +33,8 @@
 次に、解の確率振幅を増幅する演算を$k$回行うことにより、$O(\sqrt{N})$回の計算量で解を見出すことができる。
 古典的な探索アルゴリズムは$O(N)$回の計算量であるため、グローバーのアルゴリズムの方が高速であると言える\cite{QuantumDojo}。
 
-先ほど初期状態を用意するために使用した
+% 先ほど初期状態を用意するために使用した
+初期状態を用意するために使用した
 アダマール演算子は、量子ビットの基底をなす状態$\ket{0},\ket{1}$の2つの重ね合わせであり、
 \begin{eqnarray*}
     H = \frac{1}{\sqrt{2}}\begin{pmatrix}
@@ -46,7 +44,6 @@
 \end{eqnarray*}
 と記述できる。
 状態$\ket{0}$に作用させると、
-% $H\ket{0} = (\ket{0} + \ket{1})/\sqrt{2}$
 \begin{eqnarray*}
     H\ket{0} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
 \end{eqnarray*}
@@ -54,20 +51,19 @@
 この演算子は、1量子ビットの任意の$Z-Y$回転行列に分解することができる\cite{QuantumComputingFundamentalsAndPhysicsContacts}。
 本研究では、アダマール演算子$H$に$y$軸方向のズレ$\delta_y$、$z$軸方向のズレ$\delta_z$が生じている時と考える。
 
-% TODO:その他の状態(z軸、y,z軸)も将来書くこと
-
 \section{研究内容と結果}
 量子シミュレータQulacsを用いて、グローバーのアルゴリズムを実装した。
-3量子ビットのグローバーのアルゴリズムに$\delta_y$を$0$から$2\pi$まで加え、
+3量子ビットのグローバーのアルゴリズムにおいて$\delta_y$を$0$から$2\pi$まで加え、
 最適な繰り返し回数$k$の解の状態の確率振幅を計算する数値実験を行った(図)。
 % この結果から、$\frac{\pi}{2}$を境に確率振幅が下がり、$\frac{5}{4}\pi$で極小となり、$\frac{5}{4}\pi$では解の状態の確率振幅がほとんど増加しないことを示している。
 この結果から、$\delta_y$ を大きくしていくと、確率は $\delta_y = \frac{\pi}{2}$ を境に減少する。
 その後、 $\delta_y = \frac{5\pi}{4}$ で極小となるが、極小値は＊＊＊であり、これは解の状態の確率振幅がほとんど増加しないことを示している。
 
-% 卒業研究発表では、図の詳細な説明と、その原因について発表する。
-% 卒業研究発表では、上記の内容と、理想的な繰り返し回数$k_{theory}$を用いて、$k - k_{theory}$とノイズの関係などについて、図の詳細な説明とその原因について議論する。
 卒業研究発表では、上記の内容に加えて、ズレがない場合のグローバーのアルゴリズムとの差について調べた結果を紹介する予定である。
 
+\begin{comment}
+TODO: ここは、予稿の提出ちょっと前までの進捗を踏まえて書き直す
+\end{comment}
 今後の展望として、量子ビット数を増やして同様の計算を行ったり、$z$軸方向のズレ$\delta_z$を加えた計算、$\delta_y$, $\delta_z$の両方を加えた計算を行い、グローバーのアルゴリズムがどれだけ機能するか調べる。
 
 \begin{figure}
