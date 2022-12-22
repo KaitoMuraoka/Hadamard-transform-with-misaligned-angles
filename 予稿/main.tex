@@ -1,0 +1,78 @@
+\RequirePackage{plautopatch}
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[platex,dvipdfmx, twocolumn]{jsarticle}			% for platex
+\usepackage[margin=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{bxtexlogo}
+\usepackage{braket} % ブラケット
+\usepackage{amsmath} % 行列
+\usepackage{url}
+\usepackage{caption}
+\usepackage{comment}
+\pagestyle{empty} % ページ数を非表示
+
+\title{初期状態が不完全なグローバーのアルゴリズムの振る舞いについて}
+
+\author{東海大学理学部物理学科　伊與田研究室　9BSP1118 村岡海人}
+\date{}
+\begin{document}
+\maketitle
+\section{背景と目的}
+量子コンピュータとは、量子力学を利用して計算を行うコンピュータである。
+この量子コンピュータで行う計算を量子計算と呼び、量子計算におけるアルゴリズムのことを量子アルゴリズムと呼ぶ。
+例えば、多項式時間で整数を因数分解するショアのアルゴリズムや、ソートされていないデータベースから特定のデータを探索するグローバーのアルゴリズムがある。
+
+従来の計算機が論理演算から構成されているのと同様、量子計算も量子演算から構成されており、
+この量子演算は、時間に依存するシュレディンガー方程式から記述することができる。
+量子計算を行う際に、ハミルトニアンや時間がズレてしまうと実現したい操作からズレた操作を行うことになり、アルゴリズム自体の出力に対するエラーになってしまう。
+
+本研究では、初期状態を準備する操作が不完全な場合に、グローバーのアルゴリズムがどれだけ機能するか調べることを目的とした。
+
+\section{基本事項}
+グローバーのアルゴリズムは$N個$のデータに対して、初期状態を作成するためにアダマール演算子$H$を使って、全ての計算基底の重ね合わせを用意する。
+次に、解の確率振幅を増幅する演算を$k$回行うことにより、$O(\sqrt{N})$回の計算量で解を見出すことができる。
+古典的な探索アルゴリズムは$O(N)$回の計算量であるため、グローバーのアルゴリズムの方が高速であると言える\cite{QuantumDojo}。
+
+% 先ほど初期状態を用意するために使用した
+初期状態を用意するために使用した
+アダマール演算子は、量子ビットの基底をなす状態$\ket{0},\ket{1}$の2つの重ね合わせであり、
+\begin{eqnarray*}
+    H = \frac{1}{\sqrt{2}}\begin{pmatrix}
+        1 & 1\\
+        1 & -1
+    \end{pmatrix}
+\end{eqnarray*}
+と記述できる。
+状態$\ket{0}$に作用させると、
+\begin{eqnarray*}
+    H\ket{0} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
+\end{eqnarray*}
+のように重ね合わせ状態が得られる\cite{BasicQuantumComputer}。
+この演算子は、1量子ビットの任意の$Z-Y$回転行列に分解することができる\cite{QuantumComputingFundamentalsAndPhysicsContacts}。
+本研究では、アダマール演算子$H$に$y$軸方向のズレ$\delta_y$、$z$軸方向のズレ$\delta_z$が生じている時と考える。
+
+\section{研究内容と結果}
+量子シミュレータQulacsを用いて、グローバーのアルゴリズムを実装した。
+3量子ビットのグローバーのアルゴリズムにおいて$\delta_y$を$0$から$2\pi$まで加え、
+最適な繰り返し回数$k$の解の状態の確率振幅を計算する数値実験を行った(図)。
+% この結果から、$\frac{\pi}{2}$を境に確率振幅が下がり、$\frac{5}{4}\pi$で極小となり、$\frac{5}{4}\pi$では解の状態の確率振幅がほとんど増加しないことを示している。
+この結果から、$\delta_y$ を大きくしていくと、確率は $\delta_y = \frac{\pi}{2}$ を境に減少する。
+その後、 $\delta_y = \frac{5\pi}{4}$ で極小となるが、極小値は＊＊＊であり、これは解の状態の確率振幅がほとんど増加しないことを示している。
+
+卒業研究発表では、上記の内容に加えて、ズレがない場合のグローバーのアルゴリズムとの差について調べた結果を紹介する予定である。
+
+\begin{comment}
+TODO: ここは、予稿の提出ちょっと前までの進捗を踏まえて書き直す
+\end{comment}
+今後の展望として、量子ビット数を増やして同様の計算を行ったり、$z$軸方向のズレ$\delta_z$を加えた計算、$\delta_y$, $\delta_z$の両方を加えた計算を行い、グローバーのアルゴリズムがどれだけ機能するか調べる。
+
+\begin{figure}
+\centering
+\includegraphics[width=70mm]{figures/sample.png}
+\caption*{図　ノイズ$\delta_y$を加えた時の最適な繰り返し回数の推移}
+\label{fig:P(k)}
+\end{figure}
+
+\bibliographystyle{junsrt}
+\bibliography{references}
+\end{document}
