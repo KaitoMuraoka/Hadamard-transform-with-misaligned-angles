@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  21 DEC 2022 23:42
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 09:29
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -295,11 +295,11 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 36.
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 41.
+(nag)                Use amsmath's align instead on input line 42.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 50.
+(nag)                Use amsmath's align instead on input line 51.
 
 File: figures/sample.png Graphic file (type bmp)
 <figures/sample.png>
@@ -309,7 +309,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
 )
-Package plautopatch Info: No additional packages loaded on input line 79.
+Package plautopatch Info: No additional packages loaded on input line 80.
 
 
 Package nag Warning: 2 complaints in total.
@@ -325,9 +325,9 @@ Here is how much of TeX's memory you used:
  23792 multiletter control sequences out of 15000+600000
  479730 words of font info for 77 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 59i,12n,63p,268b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,63p,253b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 7136 bytes).
+Output written on main.dvi (1 page, 7172 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -379,5 +379,5 @@ is.kanji.str$ -- 23
 
 main.dvi -> main.pdf
 [1]
-98870 bytes written
+99138 bytes written
 
