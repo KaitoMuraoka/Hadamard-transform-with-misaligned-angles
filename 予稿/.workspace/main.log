@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 09:29
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 13:50
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -290,16 +290,16 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 23.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 36.
+(Font)              scaled to size 6.72699pt on input line 35.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 36.
+(Font)              scaled to size 4.805pt on input line 35.
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 42.
+(nag)                Use amsmath's align instead on input line 41.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 51.
+(nag)                Use amsmath's align instead on input line 50.
 
 File: figures/sample.png Graphic file (type bmp)
 <figures/sample.png>
@@ -309,7 +309,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 6.
 )
-Package plautopatch Info: No additional packages loaded on input line 80.
+Package plautopatch Info: No additional packages loaded on input line 82.
 
 
 Package nag Warning: 2 complaints in total.
@@ -327,7 +327,7 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  59i,12n,63p,253b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 7172 bytes).
+Output written on main.dvi (1 page, 7200 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -379,5 +379,5 @@ is.kanji.str$ -- 23
 
 main.dvi -> main.pdf
 [1]
-99138 bytes written
+95298 bytes written
 
