@@ -5,6 +5,11 @@
 % \documentclass[uplatex,dvipdfmx]{jlreq}		% for uplatex
 \usepackage{graphicx}
 \usepackage{bxtexlogo}
+\usepackage{braket} % ブラケット
+\usepackage{amsmath} % 行列
+\usepackage{comment} % コメント
+
+\usepackage{tikz,braket}
 
 \title{初期状態が不完全なグローバーのアルゴリズムの振る舞いについて}
 
@@ -14,6 +19,12 @@
 \maketitle
 \tableofcontents
 \clearpage
+
+\makeatletter
+\renewcommand{\theequation}{%
+\thesection.\arabic{equation}}
+\@addtoreset{equation}{section}
+\makeatother
 
 \section{はじめに}
 \subsection{研究の背景}
@@ -28,9 +39,94 @@
 量子計算を行う際に、ハミルトニアンや時間がズレてしまうと実現したい操作からズレた操作を行うことになり、アルゴリズム自体の出力に対す るエラーになってしまう。
 本研究では、初期状態を準備する操作が不完全な場合に、グローバーのアルゴリズムがどれだけ機能するか調べることを目的とした。
 \subsection{本論文の構成}
-
+% 大部分が書き終えてから
 \section{基本的内容}
 \subsection{量子ビット}
+ビットは古典計算と古典情報の基本概念である。
+量子計算と量子情報は類似の概念である量子ビットの上に構築される。
+\subsubsection{単一量子ビット}
+まず、量子ビットの説明をする。
+古典ビットに1あるいは0の状態に対応した、
+状態$\ket{0} = \begin{pmatrix}
+    1 \\
+    0
+\end{pmatrix}$と$\ket{1} = \begin{pmatrix}
+    0 \\
+    1
+\end{pmatrix}$がある。
+ここで、量子状態を表すために、ケット記号($\ket{}$)を使ったディラックの記法を用意した。
+量子ビットと古典ビットの違いは、量子ビットは$\ket{0}$と$\ket{1}$の重ね合わせ状態を取り得ることである。
+これは次のように$\ket{0}$と$\ket{1}$の線型結合として、
+
+\begin{equation}
+    \label{eq: QuantumComputationAndQuantumInfomation.1.1}
+    \ket{\psi} = \alpha \ket{0} + \beta \ket{1}
+\end{equation}
+
+と表される。ここで、$\alpha, \beta$は複素数であり、複素確率振幅と呼ぶ。
+量子ビットの状態は2次元複素ベクトル空間のベクトルで表される。
+特に$\ket{0}$と$\ket{1}$計算基底状態と呼び、この2次元複素ベクトル空間の正規直交基底を構成する。
+
+古典計算では、古典ビットを調べてそれが0, 1のいずれの状態にあるかを決めることができる。
+例えば、コンピュータがメモリの内容を取り出す時にいつもこれを行なっている。
+量子ビットは量子ビットを調べてその量子状態、つまり、$\alpha$と$\beta$の値を決めることはできない。
+量子ビットに対して$\ket{0}$と$\ket{1}$のいずれの状態にあるかを調べる測定を行うと、確率$|\alpha|^2$で$\ket{0}$、確率$|\beta|^2$で$\ket{1}$が得られる。
+全確率の和は$1$なので、$|\alpha|^2 + |\beta|^2 = 1$である。
+幾何学的解釈ではこれは量子ビットの状態が長さ1に正規化される条件である。
+したがって、一般的に量子ビットの状態は2次元複素ベクトル空間の単位ベクトルを表す。
+
+\begin{comment}
+    TODO: ここはもう少し具体的に修正
+\end{comment}
+量子ビットは自由度が2の多くの系で実現されている。
+例えば、核スピン、単一光子の2つの異なる偏光、単一原子における電子軌道の2つの状態などがある。
+原子モデルで電子は基底状態、または励起状態に存在しそれぞれを$\ket{0}, \ket{1}$と呼ぶ。
+
+% ブロッホ球のことについて
+次のような幾何学的表現が量子ビットを考える上で有用な描像である。
+$|\alpha|^2 + |\beta|^2 = 1$であるので、式(\ref{eq: QuantumComputationAndQuantumInfomation.1.1})を次のように書き換える。
+
+% \begin{equation}
+%     \label{eq: QuantumComputationAndQuantumInfomation.1.3}
+%     \ket{\psi} = e^{i \gamma} \left( \cos{\frac{\theta}{2}} \ket{0} + e^{i\varphi} \sin{\frac{\theta}{2}} \ket{1} \right)
+% \end{equation}
+% ここで、$\theta, \varphi, \gamma$は実数である。
+
+\begin{equation}
+    \label{eq: QuantumComputationAndQuantumInfomation.1.4}
+    \ket{\psi} = \cos{\frac{\theta}{2}} \ket{0} + e^{i \varphi} \sin{\frac{\theta}{2}} \ket{1}
+\end{equation}
+ここで、$\theta, \varphi$は実数である。
+図に示すように、$\theta, \varphi$は3次元単位球面上の点を定義する。
+この球面をブロッホ球と呼ぶ。
+
+% ブロッホ球の図
+\begin{figure}[htbp]
+    \label{fig: bloch球}
+    \centering
+    \tikz{
+  \tikzstyle{st}=[lightgray, fill, fill opacity=0.1]
+  \coordinate(o)at(0,0);
+  \draw(o)circle(2cm);
+  \draw[fill](o)circle(1.5pt);%origin
+  \draw[st](o)--(56.7:0.4)arc(56.7:90.:0.4)--cycle;%theta angle
+  \draw(0.18,0.6)node{$\theta$};
+  \draw[st](o)--(-135.7:0.4)arc(-135.7:-33.2:0.4)--cycle;%varphi angle
+  \draw(0.14,-0.58)node{$\varphi$};
+  \draw[->](o)--(-0.81,-0.79) node[above left]{$x$};%x
+  \draw[->](o)--(2,0)node[right]{$y$};%y
+  \draw[->](o)--(0,2)node[below right]{$z$}node[above]{$\ket{0}$};%z |0>
+  \draw[rotate around={0.:(0.,0.)},dashed](0,0)ellipse(2cm and 0.9cm);%ellipse
+  \draw[thick,->](o)--(0.70,1.07)node[above]{$\ket{\psi}$};%state vector
+  \draw[densely dotted,->](o)--(0,-2)node[below]{$\ket{1}$};%-z |1>
+  \draw[dotted](o)--(0.7,-0.46)--(0.7,1);%triangle
+}
+\caption{量子ビットのブロッホ球表示}
+\end{figure}
+
+これは単一量子ビット状態を視覚化する便利な方法である。
+単一量子ビットの操作はブロッホ球上の描像で記述できる。
+しかし、ブロッホ球は多量子ビットに対して一般化できないことに注意する。
 
 \subsection{量子計算}
 
