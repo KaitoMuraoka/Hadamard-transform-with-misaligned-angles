@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  22 DEC 2022 13:57
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 13:39
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -330,7 +330,7 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  59i,12n,63p,237b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (1 page, 7196 bytes).
+Output written on main.dvi (1 page, 7204 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -382,5 +382,5 @@ is.kanji.str$ -- 23
 
 main.dvi -> main.pdf
 [1]
-95129 bytes written
+95114 bytes written
 
