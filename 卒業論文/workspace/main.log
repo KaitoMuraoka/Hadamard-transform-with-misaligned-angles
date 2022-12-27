@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 15:34
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 16:11
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -606,26 +606,27 @@ LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <8.99994> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 124.
+[3]
 ***** List of packages loaded by `plautopatch': *****
  pxpgfrcs, pxpgfmark.
 *****************************************************
 
 Package nag Warning: 1 complaints in total.
 
-[3] [4] (./main.aux) ) 
+[4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16567 strings out of 478739
- 356938 string characters out of 5858777
- 631567 words of memory out of 5000000
- 34694 multiletter control sequences out of 15000+600000
+ 16568 strings out of 478739
+ 356986 string characters out of 5858777
+ 630577 words of memory out of 5000000
+ 34695 multiletter control sequences out of 15000+600000
  532954 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  85i,8n,89p,871b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (5 pages, 20484 bytes).
+Output written on main.dvi (5 pages, 23460 bytes).
 
 
 main.dvi -> main.pdf
 [1][2][3][4][5]
-86714 bytes written
+94529 bytes written
 
