@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 16:11
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  28 DEC 2022 19:41
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -563,50 +563,51 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1]
+ [1] (./overview.tex Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 6.
+) (./basicInfomation.tex Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
- [2
+(Font)              scaled to size 10.0pt on input line 10.
+ (./?^^9f堺^^9c ^^9a^^84?^^86^^85絎?/singleQubit.tex Excluding 'comment' comment. [2
 
 ] Excluding 'comment' comment.
 
-Package nag Warning: \label in float, but not after \caption on input line 105.
+Package nag Warning: \label in float, but not after \caption on input line 62.
 
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 124.
+(Font)              scaled to size 8.99994pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 124.
+(Font)              scaled to size 8.99994pt on input line 81.
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <8.99994> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 124.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 124.
+(Font)              scaled to size 8.99994pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <8.99994> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 124.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 124.
-[3]
+(Font)              scaled to size 8.99994pt on input line 81.
+) (./?^^9f堺^^9c ^^9a^^84?^^86^^85絎?/multipleQubit.tex Excluding 'comment' comment. [3]) (./?^^9f堺^^9c ^^9a^^84?^^86^^85絎?/quantumComputing.tex Excluding 'comment' comment.) (./?^^9f堺^^9c ^^9a^^84?^^86^^85絎?/quantumjAlgorithm.tex Excluding 'comment' comment.))
 ***** List of packages loaded by `plautopatch': *****
  pxpgfrcs, pxpgfmark.
 *****************************************************
@@ -615,18 +616,18 @@ Package nag Warning: 1 complaints in total.
 
 [4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16568 strings out of 478739
- 356986 string characters out of 5858777
+ 16589 strings out of 478739
+ 357481 string characters out of 5858777
  630577 words of memory out of 5000000
- 34695 multiletter control sequences out of 15000+600000
+ 34697 multiletter control sequences out of 15000+600000
  532954 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 85i,8n,89p,871b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,8n,89p,871b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (5 pages, 23460 bytes).
+Output written on main.dvi (5 pages, 23592 bytes).
 
 
 main.dvi -> main.pdf
 [1][2][3][4][5]
-94529 bytes written
+94501 bytes written
 
