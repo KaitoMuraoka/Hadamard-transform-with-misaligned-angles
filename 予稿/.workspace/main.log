@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 13:39
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  27 DEC 2022 13:44
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -382,5 +382,5 @@ is.kanji.str$ -- 23
 
 main.dvi -> main.pdf
 [1]
-95114 bytes written
+95100 bytes written
 
