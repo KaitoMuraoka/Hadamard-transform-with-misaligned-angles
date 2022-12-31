@@ -1,4 +1,3 @@
-% \RequirePackage{plautopatch}
 \RequirePackage[l2tabu, orthodox]{nag}
 
 \documentclass[platex,dvipdfmx]{beamer}			% for platex
@@ -44,21 +43,20 @@ arrayも使えます.
 \end{frame}
 
 % 箇条書き
-\section{箇条書き}
-\begin{frame}{箇条書き}
-    \begin{itemize}
-        \item item 1
-        \begin{enumerate}
-            \item item1-1
-            \item item1-2
-        \end{enumerate}
-        \item item 2
-        \begin{enumerate}[I]
-            \item item 2-1
-            \item item 2-2
-            \item item 2-3
-        \end{enumerate}
-    \end{itemize}
+\section{5量子ビットの時の理想とノイズのある繰り返し回数の差}
+\begin{frame}{5量子ビットの時の理想とノイズのある繰り返し回数の差}
+    \begin{columns}[onlytextwidth]
+        \begin{column}{.45\textwidth}
+            5量子ビットの時の理想とノイズのある繰り返し回数の差
+        \end{column}
+        \hfill
+        \begin{column}{.60\textwidth}
+        \begin{figure}
+          \includegraphics[width=\textwidth]{figures/5Qubitk_theory.png}
+          \caption{理想の繰り返し回数とノイズのある繰り返し回数の差}
+        \end{figure}
+        \end{column}
+        \end{columns}
 \end{frame}
 
 % 表スライド

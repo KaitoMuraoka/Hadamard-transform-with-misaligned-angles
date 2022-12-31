@@ -1,3 +1,151 @@
 \begin{comment}
     量子計算についての記述
 \end{comment}
+
+\subsubsection{単一量子ビットゲート}
+量子ビットに対する論理ゲートを説明するために、まず古典コンピュータについて考える。
+古典コンピュータ回路は配線と論理ゲートより構成される。
+配線は回路中の情報を運び、論理ゲートは情報を変換して操作する。
+例えば、古典的単一ビット論理ゲートであるNOTゲートを考える。 
+% 真理値表を作成するように
+NOTゲートの働きは表に示す真理値表で定義され、$0 \rightarrow 1$及び$1 \rightarrow 0$つまり、状態$0, 1$の入れ替えが行われる。
+真理値表とは入力と出力の対応を表すための表である。
+
+量子ビットに対しても同様にNOTゲートを定義することができる。
+量子ビットへの操作は線形変換であり、単一量子ビットに作用する量子ゲートは$2 \times 2$の行列で記述できる。
+特に量子ビットに対するNOTゲートは次のように定義される行列で表される。
+
+\begin{equation}
+    X = \begin{pmatrix}
+        0 & 1\\
+        1 & 0
+    \end{pmatrix}
+\end{equation}
+この行列のことをXゲートと呼ぶ。
+また、量子状態$\alpha \ket{0} + \beta \ket{1}$をベクトル表記で次のように記述する。
+\begin{equation}
+    \alpha \ket{0} + \beta \ket{1} = \begin{pmatrix}
+        \alpha \\
+        \beta
+    \end{pmatrix}
+\end{equation}
+ここで、上の要素は$\ket{0}$に対する振幅、下の要素は$\ket{1}$に対する振幅に相当する。
+量子NOTゲートの出力は、
+\begin{equation}
+    X \begin{pmatrix}
+        \alpha \\
+        \beta
+    \end{pmatrix}
+    = \begin{pmatrix}
+        \beta \\
+        \alpha
+    \end{pmatrix}
+\end{equation}
+で与えられる。
+このXゲートはブラケット表記で次のようにも記述できる。
+\begin{equation}
+    X = \ket{0}\bra{1} + \ket{1}\bra{0}
+\end{equation}
+
+量子ゲートの行列に対する制約について議論する。
+量子状態$\alpha \ket{0} + \beta \ket{1}$に対して正規化条件$|\alpha|^2 + |\beta|^2 = 1$が必要であることを考慮すると、正規化条件はゲート作用後の量子状態$\ket{\psi'} = \alpha' \ket{0} + \beta' \ket{1}$に対しても成立しなければならない。
+この条件を満たすのは、単一量子ビットゲートを記述する行列$U$がユニタリ、つまり$U^{\dagger}U = I$を満たす場合である。
+ここで、$U^{\dagger}$は$U$のエルミート共役、Iは$2 \times 2$の単位行列である。
+
+単一量子ビットに対する量子ゲートとして、後で用いる3つのゲートを導入する。
+Zゲートは、
+\begin{equation}
+    Z = \begin{pmatrix}
+        1 & 0 \\
+        0 & -1
+    \end{pmatrix}
+    = \ket{0}\bra{0} - \ket{1}\bra{1}
+\end{equation}
+と定義される。
+Yゲートは、
+\begin{equation}
+    Y = \begin{pmatrix}
+        0 & -i \\
+        i & 0
+    \end{pmatrix}
+    = -i \ket{1}\bra{0} - i \ket{0}\ket{1}
+\end{equation}
+と定義される。
+アダマールゲートは、
+\begin{equation}
+    H \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}
+        1 & 1 \\
+        1 & -1
+    \end{pmatrix}
+    = \frac{1}{\sqrt{2}}(\ket{0}\bra{0} + \ket{1}\bra{0} + \ket{0}\bra{1} - \ket{1}\bra{1})
+\end{equation}
+と定義される。
+アダマールゲートを$\ket{0}$または$\ket{1}$に作用させると、
+\begin{equation}
+    H\ket{0} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
+\end{equation}
+\begin{equation}
+    H \ket{1} = \frac{1}{\sqrt{2}}(\ket{0} - \ket{1})
+\end{equation}
+に変換される。
+これらは簡単な代数計算で、$X^2 = Y^2 = Z^2 = H^2 = I$とわかる。
+
+\subsubsection{1量子ビットの任意の回転}
+% \subsubsection{任意角度のスピンと1量子ビットの状態}
+任意のユニタリ回転ゲートを作成する。
+$x, y, z$軸周りに1量子ビットを回転させる行列は、次のようにパウリ演算子$X, Y, Z$から求められる。
+\begin{equation}
+    R_x(\theta) = e^{-i \theta X / 2} = \cos{\frac{\theta}{2}}I - i \sin{\frac{\theta}{2}} X = \begin{pmatrix}
+        \cos{\frac{\theta}{2}} & -i \sin{\frac{\theta}{2}} \\
+        -i \sin{\frac{\theta}{2}} & \cos{\frac{\theta}{2}} \\
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    R_y(\theta) = e^{-i \theta Y / 2} = \cos{\frac{\theta}{2}} I - i \sin{\frac{\theta}{2}} Y =  \begin{pmatrix}
+        \cos{\frac{\theta}{2}} & -i\sin{\frac{\theta}{2}} \\
+        \sin{\frac{\theta}{2}} & \cos{\frac{\theta}{2}} \\
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    R_z(\theta) = e^{-i \theta Z / 2} = \cos{\frac{\theta}{2}}I - i \sin{\frac{\theta}{2}} Y = \begin{pmatrix}
+        e^{-i \theta / 2} & 0 \\
+        0 & e^{i\theta/2}
+    \end{pmatrix}
+\end{equation}
+そして、1量子ビットの任意のユンタリ回転ゲートは、これらの$Z-Y$回転行列で分解できる。
+実数$\gamma, \phi, \theta, \lambda$を用いて、
+\begin{equation}
+    \label{eq: global}
+    U(\theta, \phi, \lambda) = e^{i \gamma} R_z(\phi) R_y(\theta) R_z(\lambda) 
+    = e^{i(\gamma - \frac{\theta}{2} - \frac{\phi}{2})}
+    \begin{pmatrix}
+        \cos{\frac{\theta}{2}} & -e^{i\lambda} \sin{\frac{\theta}{2}} \\
+        e^{i\phi}\sin{\frac{\theta}{2}} & e^{i(\lambda + \phi) \cos{\frac{\theta}{2}}}
+    \end{pmatrix}
+\end{equation}
+上記で用いられる$e^{i(\gamma - \frac{\theta}{2} - \frac{\phi}{2})}$は、全体位相と呼ばれ、ブロッホ球上の回転操作や回転角に直接関わることなく、また実際に観測される量ではないため、実際の任意の回転行列は、
+\begin{equation}
+    \label{eq: hoge}
+    U(\theta, \phi, \lambda) = 
+    \begin{pmatrix}
+        \cos{\frac{\theta}{2}} & -e^{i \lambda}\sin{\frac{\theta}{2}} \\
+        e^{i \phi} \sin{\frac{\theta}{2}} & e^{i(\lambda + \phi)} \cos{\frac{\theta}{2}}
+    \end{pmatrix}
+\end{equation}
+となる。
+
+% このユニタリ回転ゲートを用いいると、アダマール演算子$H$は、
+% \begin{align}
+%     H &= \frac{1}{\sqrt{2}} \begin{pmatrix}
+%         1 & 1 \\
+%         1 & -1
+%     \end{pmatrix} \\
+%     &= \begin{pmatrix}
+%         \cos{\frac{\pi}{4}} & -e^{i \pi} \sin{\frac{\pi}{4}} \\
+%         e^{i 0}\sin{\frac{\pi}{4}} & e^{i \pi} \cos{\frac{\pi}{4}}
+%     \end{pmatrix} \\
+%     &= U(\frac{1}{2}\pi, 0, \pi)
+% \end{align}
+% となる。
