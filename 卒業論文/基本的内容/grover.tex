@@ -186,25 +186,30 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
     \label{fig:rootate}
 \end{figure}
 
-% 以上より、平面ベクトル内で、角度$\theta$だけの回転が行われ、$\ket{w}$を測定する確率が上昇することがわかる。
+以上より、平面ベクトル内で、角度$\theta$だけの回転が行われ、$\ket{w}$を測定する確率が上昇することがわかる。
 
 
 % \section{最適な$k$の見積もり}
-% 最後に、$U_sU_w$を作用させる回数$k$について、最適な回数が幾つなのか調べる。
-% 式(3.2)より、グローバーのアルゴリズムを1回施すと、
-% \begin{equation}
-%     U_sU_w\ket{s} = \cos{\frac{3}{2}\theta}\ket{w^{\perp}} + \sin{\frac{3}{2}\theta}\ket{w}
-% \end{equation}
-% となる。これを$k$回施すと、
-% \begin{equation}
-%     (U_sU_w)^k\ket{s} = \cos{\frac{2k+1}{2}\theta} \ket{w^{\perp}} + \sin{\frac{2k+1}{2}\theta} \ket{w}
-% \end{equation}
-% となる。これを用いて、最終的に$\ket{w}$の確率振幅を1にしたいので、
-% % \begin{eqnarray}
-% %     \sin{\frac{2k + 1}{2}\theta} = 1 \nonumber \\
-% %     \Leftrightarrow	\frac{2k + 1}{2}\theta = \frac{\pi}{2} \nonumber \\
-% %     k = \frac{\pi}{2 \theta} 
-% % \end{eqnarray}
+\subsubsection{最適な$k$の見積もり}
+最後に、$U_sU_w$を作用させる回数$k$について、最適な回数が幾つなのか調べる。
+式(3.2)より、グローバーのアルゴリズムを1回施すと、
+\begin{equation}
+    U_sU_w\ket{s} = \cos{\frac{3}{2}\theta}\ket{w^{\perp}} + \sin{\frac{3}{2}\theta}\ket{w}
+\end{equation}
+となる。これを$k$回施すと、
+\begin{equation}
+    (U_sU_w)^k\ket{s} = \cos{\frac{2k+1}{2}\theta} \ket{w^{\perp}} + \sin{\frac{2k+1}{2}\theta} \ket{w}
+\end{equation}
+となる。これを用いて、最終的に$\ket{w}$の確率振幅を1にしたいので、
+
+\begin{equation}
+    \begin{split}
+        \sin{\frac{2k + 1}{2} \theta} = 1 \\
+        \Leftrightarrow \frac{2 k + 1}{2} \theta = \frac{\pi}{2} \\
+        k = \frac{\pi}{2 \theta}
+    \end{split}
+\end{equation}
+
 % \begin{equation}
 %     \begin{split}
 %             \sin{\frac{2k + 1}{2}\theta} = 1 \\
@@ -212,18 +217,19 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
 %             \therefore k = \frac{\pi}{2 \theta} 
 %     \end{split}
 % \end{equation}
-% となる。よって、$\frac{2k + 1}{2}\theta$が$\frac{\pi}{2}$にもっとも近くなるときは、
-% \begin{equation}
-%     R = ClosestInteger(\frac{\pi}{2\theta} - \frac{1}{2})
-% \end{equation}
-% の時である。ここで、$ClosestInteger(...)$は$...$に最も近い整数を表す。
 
-% 最後に、Rの上限を評価する。$\theta > 0$について成り立つ式、
-% \begin{equation}
-%     \frac{\theta}{2} \geq \sin{\frac{\theta}{2}} = \sqrt{\frac{M}{N}}
-% \end{equation}
-% を使うと、以下のように表すことができる。
-% \begin{equation}
-%     R \leq \left( \frac{\pi}{2\theta} - \frac{1}{2} \right) + 1 = \frac{\pi}{2\theta} + \frac{1}{2} \leq \frac{\pi}{4}\sqrt{\frac{N}{M}} + \frac{1}{2}
-% \end{equation}
-% つまり、Rは$O(\sqrt{N/M})$である。これにより、グローバーのアルゴリズムが$O(\sqrt{N})$で動作することがわかる。
+となる。よって、$\frac{2k + 1}{2}\theta$が$\frac{\pi}{2}$にもっとも近くなるときは、
+\begin{equation}
+    R = ClosestInteger(\frac{\pi}{2\theta} - \frac{1}{2})
+\end{equation}
+の時である。ここで、$ClosestInteger(...)$は$...$に最も近い整数を表す。
+
+最後に、Rの上限を評価する。$\theta > 0$について成り立つ式、
+\begin{equation}
+    \frac{\theta}{2} \geq \sin{\frac{\theta}{2}} = \sqrt{\frac{M}{N}}
+\end{equation}
+を使うと、以下のように表すことができる。
+\begin{equation}
+    R \leq \left( \frac{\pi}{2\theta} - \frac{1}{2} \right) + 1 = \frac{\pi}{2\theta} + \frac{1}{2} \leq \frac{\pi}{4}\sqrt{\frac{N}{M}} + \frac{1}{2}
+\end{equation}
+つまり、Rは$O(\sqrt{N/M})$である。これにより、グローバーのアルゴリズムが$O(\sqrt{N})$で動作することがわかる。
