@@ -37,7 +37,6 @@ def make_U_w(nqubits):
     return U_w
 
 # 反転U_sを作成
-# 反転U_sを作る
 def make_U_s(nqubits):
     U_s = QuantumCircuit(nqubits)
     for i in range(nqubits):
