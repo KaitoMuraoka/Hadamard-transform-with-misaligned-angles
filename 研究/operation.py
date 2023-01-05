@@ -17,6 +17,7 @@ from qulacs.gate import U1,U2,U3 #IBMQの基底ゲート
 from fractions import Fraction
 
 
+
 # アダマール演算子
 def Hadamard(nqubits):
     Hadamard = QuantumCircuit(nqubits)
@@ -24,17 +25,19 @@ def Hadamard(nqubits):
         Hadamard.add_gate(H(i))
     return Hadamard
 
+
 # オラクルU_wの作成
 def make_U_w(nqubits):
     U_w = QuantumCircuit(nqubits)
-    CnZ = to_matrix_gate(Z(nqubits-1))
+    CnZ = to_matrix_gate(Z(nqubits - 1))
     # i-th qubitが全て1の場合だけゲートを作用
-    for i in range(nqubits-1):
+    for i in range(nqubits - 1):
         control_index = i
         control_with_value = 1
         CnZ.add_control_qubit(control_index, control_with_value)
     U_w.add_gate(CnZ)
     return U_w
+
 
 # 反転U_sを作成
 def make_U_s(nqubits):
@@ -43,30 +46,43 @@ def make_U_s(nqubits):
         U_s.add_gate(H(i))
 
     ## 2|0><0| - I の実装
-    U_s.add_gate(to_matrix_gate(RZ(nqubits-1, 2*np.pi))) ## まず、位相(-1)を全ての状態に付与する。ゲート行列はarrary([[-1,0],[0,-1]])
-    U_s.add_gate( X(nqubits-1) )
+    U_s.add_gate(to_matrix_gate(RZ(nqubits - 1, 2 * np.pi)))  ## まず、位相(-1)を全ての状態に付与する。ゲート行列はarrary([[-1,0],[0,-1]])
+    U_s.add_gate(X(nqubits - 1))
     ## 全てのi-th qubitが0の場合だけZゲートを作用させる
-    CnZ = to_matrix_gate(Z(nqubits-1))
-    for i in range(nqubits-1):
+    CnZ = to_matrix_gate(Z(nqubits - 1))
+    for i in range(nqubits - 1):
         control_index = i
         control_with_value = 0
         CnZ.add_control_qubit(control_index, control_with_value)
-    U_s.add_gate( CnZ )
-    U_s.add_gate( X(nqubits-1) )
+    U_s.add_gate(CnZ)
+    U_s.add_gate(X(nqubits - 1))
 
     for i in range(nqubits):
         U_s.add_gate(H(i))
 
     return U_s
 
+
 # 任意の回転ゲートを利用してアダマールゲートを作成する
 def make_revolution_Hadamard(nqubits):
     U_3 = QuantumCircuit(nqubits)
-    THETA = np.pi/2
+    THETA = np.pi / 2
     PHI = 0
     LAMBDA = np.pi
     # 全てのqubitにゲートを作用
     for i in range(nqubits):
         control_index = i
         U_3.add_gate(U3(control_index, THETA, PHI, LAMBDA))
+    return U_3
+
+
+def make_noisy_Hadamard(nqubits, delta):
+    U_3 = QuantumCircuit(nqubits)
+    THETA = np.pi / 2
+    PHI = 0
+    LAMBDA = np.pi
+    # 全てのqubitにゲートを作用
+    for i in range(nqubits):
+        control_index = i
+        U_3.add_gate(U3(control_index, THETA + delta, PHI, LAMBDA))
     return U_3
