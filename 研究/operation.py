@@ -58,3 +58,15 @@ def make_U_s(nqubits):
         U_s.add_gate(H(i))
 
     return U_s
+
+# 任意の回転ゲートを利用してアダマールゲートを作成する
+def make_revolution_Hadamard(nqubits):
+    U_3 = QuantumCircuit(nqubits)
+    THETA = np.pi/2
+    PHI = 0
+    LAMBDA = np.pi
+    # 全てのqubitにゲートを作用
+    for i in range(nqubits):
+        control_index = i
+        U_3.add_gate(U3(control_index, THETA, PHI, LAMBDA))
+    return U_3
