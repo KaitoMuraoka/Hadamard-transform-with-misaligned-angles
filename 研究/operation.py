@@ -9,17 +9,16 @@ from qulacs.state import inner_product
 from qulacs import QuantumCircuit
 from qulacs.gate import to_matrix_gate
 from qulacs import QuantumState
-from qulacs.gate import Identity, X,Y,Z #パウリ演算子
+from qulacs.gate import Identity, X, Y, Z  # パウリ演算子
 from qulacs.gate import H
-from qulacs.gate import RX,RY,RZ #パウリ演算子についての回転演算
-from qulacs.gate import U1,U2,U3 #IBMQの基底ゲート
+from qulacs.gate import RX, RY, RZ  # パウリ演算子についての回転演算
+from qulacs.gate import U1, U2, U3  # IBMQの基底ゲート
 
 from fractions import Fraction
 
 
-
 # アダマール演算子
-def Hadamard(nqubits):
+def hadamard(nqubits):
     Hadamard = QuantumCircuit(nqubits)
     for i in range(nqubits):
         Hadamard.add_gate(H(i))
@@ -45,10 +44,10 @@ def make_U_s(nqubits):
     for i in range(nqubits):
         U_s.add_gate(H(i))
 
-    ## 2|0><0| - I の実装
-    U_s.add_gate(to_matrix_gate(RZ(nqubits - 1, 2 * np.pi)))  ## まず、位相(-1)を全ての状態に付与する。ゲート行列はarrary([[-1,0],[0,-1]])
+    # 2|0><0| - I の実装
+    U_s.add_gate(to_matrix_gate(RZ(nqubits - 1, 2 * np.pi)))  # まず、位相(-1)を全ての状態に付与する。ゲート行列はarrary([[-1,0],[0,-1]])
     U_s.add_gate(X(nqubits - 1))
-    ## 全てのi-th qubitが0の場合だけZゲートを作用させる
+    # 全てのi-th qubitが0の場合だけZゲートを作用させる
     CnZ = to_matrix_gate(Z(nqubits - 1))
     for i in range(nqubits - 1):
         control_index = i
@@ -76,7 +75,7 @@ def make_revolution_Hadamard(nqubits):
     return U_3
 
 
-def make_noisy_Hadamard(nqubits, delta):
+def make_y_noisy_Hadamard(nqubits, delta):
     U_3 = QuantumCircuit(nqubits)
     THETA = np.pi / 2
     PHI = 0
@@ -85,4 +84,15 @@ def make_noisy_Hadamard(nqubits, delta):
     for i in range(nqubits):
         control_index = i
         U_3.add_gate(U3(control_index, THETA + delta, PHI, LAMBDA))
+    return U_3
+
+def make_z_noisy_Hadamard(nqubits, delta):
+    U_3 = QuantumCircuit(nqubits)
+    THETA = np.pi / 2
+    PHI = 0
+    LAMBDA = np.pi
+    # 全てのqubitにゲートを作用
+    for i in range(nqubits):
+        control_index = i
+        U_3.add_gate(U3(control_index, THETA, PHI, LAMBDA + delta))
     return U_3

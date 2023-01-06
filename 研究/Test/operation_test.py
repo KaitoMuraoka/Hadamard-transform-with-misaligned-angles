@@ -22,7 +22,9 @@ import operation
 import unittest
 
 class TestOperation(unittest.TestCase):
-    def test_Hadamard(self, nqubits = 3):
+    # y軸を中心とした回転にノイズがあるアダマールと、
+    # ノイズのないアダマールゲートのテスト
+    def test_y_Hadamard(self, nqubits = 3):
         target_state = QuantumState(nqubits)
         target_state.set_computational_basis(2 ** nqubits - 1)
 
@@ -34,7 +36,27 @@ class TestOperation(unittest.TestCase):
 
         state2 = QuantumState(nqubits)
         state2.set_zero_state()
-        noisy_Hadamard = operation.make_noisy_Hadamard(nqubits, 0)
+        noisy_Hadamard = operation.make_y_noisy_Hadamard(nqubits, 0)
         noisy_Hadamard.update_quantum_state(state2)
         fuga = np.linalg.norm(inner_product(state2, target_state))
         self.assertEqual(hoge, fuga)
+
+    # z軸を中心とした回転にノイズがあるアダマールと、
+    # ノイズのないアダマールゲートのテスト
+    def test_z_Hadamard(self, nqubits = 3):
+        target_state = QuantumState(nqubits)
+        target_state.set_computational_basis(2 ** nqubits - 1)
+
+        state1 = QuantumState(nqubits)
+        state1.set_zero_state()
+        revolution_Hadamard = operation.make_revolution_Hadamard(nqubits)
+        revolution_Hadamard.update_quantum_state(state1)
+        hoge = np.linalg.norm(inner_product(state1, target_state))
+
+        state2 = QuantumState(nqubits)
+        state2.set_zero_state()
+        noisy_Hadamard = operation.make_z_noisy_Hadamard(nqubits, 0)
+        noisy_Hadamard.update_quantum_state(state2)
+        fuga = np.linalg.norm(inner_product(state2, target_state))
+        self.assertEqual(hoge, fuga)
+
