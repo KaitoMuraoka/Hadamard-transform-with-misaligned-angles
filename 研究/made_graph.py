@@ -23,3 +23,14 @@ def show_distribution(state, nqubits):
     plt.ylabel('各状態の確率振幅')
     plt.ylim(0, 1)
     plt.show()
+
+# 解の確率振幅と試行回数kに関するグラフ
+def line_graph(result, title):
+    plt.title(title)
+    plt.plot(result, "o-")
+    plt.xlabel('試行回数k')
+    plt.ylabel('解の確率振幅')
+    plt.ylim(0, 1)
+    plt.xticks(np.arange(0, len(result), step=1))
+    plt.grid()
+    plt.show()
