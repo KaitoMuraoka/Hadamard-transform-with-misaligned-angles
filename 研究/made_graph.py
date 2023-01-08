@@ -16,6 +16,8 @@ from qulacs.gate import U1, U2, U3  # IBMQの基底ゲート
 
 from fractions import Fraction
 
+# 自作ファイル
+import grover_algorithm as algorithm
 
 # # 係数の絶対値の分布をプロットする関数
 def show_distribution(state, nqubits):
@@ -43,6 +45,58 @@ noises_title = ['0', '(π/4)', 'π/2', '3π/4', 'π', '5π/4', '3π/2', '7π/4',
 noises_title_int = [0, (np.pi / 4), np.pi / 2, 3 * np.pi / 4, np.pi, 5 * np.pi / 4, 3 * np.pi / 2, 7 * np.pi / 4,
                     2 * np.pi]
 
+def noisy_y_graph(n, nqubits, times):
+    result_theory, k_theory, p_kth = algorithm.grover(nqubits, times)
+    noises = []
+    noises_array = []
+
+    for i in range(0, 2*n + 1):
+        sample = np.pi * i
+        result = sample / n
+        noises.append(result)
+        noises_array.append(f'{i}π/{n}')
+
+    k_k_theory_array = []
+    p_k_array = []
+    p_kth_array = []
+
+    for i in range(len(noises)):
+        noise = noises[i]
+        result, max_k, p_k = algorithm.noisy_y_grover(nqubits, times, noise)
+        k_k_theory = max_k - k_theory
+        p_k = result[max_k]
+        p_kth = result[k_theory]
+        k_k_theory_array.append(k_k_theory)
+        p_k_array.append(p_k)
+        p_kth_array.append(p_kth)
+    return k_k_theory_array, p_k_array, p_kth_array
+
+# noisy_z_graph
+def noisy_z_graph(n, nqubits, times):
+    result_theory, k_theory, p_kth = algorithm.grover(nqubits, times)
+    noises = []
+    noises_array = []
+
+    for i in range(0, 2*n + 1):
+        sample = np.pi * i
+        result = sample / n
+        noises.append(result)
+        noises_array.append(f'{i}π/{n}')
+
+    k_k_theory_array = []
+    p_k_array = []
+    p_kth_array = []
+
+    for i in range(len(noises)):
+        noise = noises[i]
+        result, max_k, p_k = algorithm.noisy_z_grover(nqubits, times, noise)
+        k_k_theory = max_k - k_theory
+        p_k = result[max_k]
+        p_kth = result[k_theory]
+        k_k_theory_array.append(k_k_theory)
+        p_k_array.append(p_k)
+        p_kth_array.append(p_kth)
+    return k_k_theory_array, p_k_array, p_kth_array
 
 # K - K_throryのグラフ化
 def different_of_k_graph(x, y, yticks_start, yticks_end):
