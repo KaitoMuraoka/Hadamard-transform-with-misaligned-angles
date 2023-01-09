@@ -43,8 +43,8 @@ arrayも使えます.
 \end{frame}
 
 % 箇条書き
-\section{5量子ビットの時の理想とノイズのある繰り返し回数の差}
-\begin{frame}{5量子ビットの時の理想とノイズのある繰り返し回数の差}
+\section{5量子ビットの時のグラフ}
+\begin{frame}{理想的な回数$k$とノイズ$\delta_y$がある時の回数$k_{\text{theory}}$}
     \begin{columns}[onlytextwidth]
         \begin{column}{.45\textwidth}
             5量子ビットの時の理想とノイズのある繰り返し回数の差
@@ -52,30 +52,45 @@ arrayも使えます.
         \hfill
         \begin{column}{.60\textwidth}
         \begin{figure}
-          \includegraphics[width=\textwidth]{figures/5Qubitk_theory.png}
-          \caption{理想の繰り返し回数とノイズのある繰り返し回数の差}
+          \includegraphics[width=\textwidth]{figures/5qubits/5Qubitk_theory.png}
+          \caption{5量子ビットの理想的な回数$k$とノイズ$\delta_y$がある時の回数$k_{\text{theory}}$}
+        \end{figure}
+        \end{column}
+        \end{columns}
+\end{frame}
+
+\begin{frame}{理想的な回数$k$の時の解の確率}
+    \begin{columns}[onlytextwidth]
+        \begin{column}{.45\textwidth}
+            5量子ビットの時の理想とノイズのある繰り返し回数の差
+        \end{column}
+        \hfill
+        \begin{column}{.60\textwidth}
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figures/5qubits/p(k).png}
+          \caption{5量子ビット時の解の確率とノイズ$\delta_y$の関係}
         \end{figure}
         \end{column}
         \end{columns}
 \end{frame}
 
 % 表スライド
-\section{表}
-\begin{frame}{表の追加}
-    \begin{table}
-        \caption{Caption}
-        \label{table:sample}
-        \centering
-            \begin{tabular}{ccc}
-            \hline
-            料理    & 値段   &  場所  \\
-            \hline \hline
-            チキン  & 200円  & 公園 \\
-            ピザ    & 300円  & 公園 \\
-            ご飯    & 100円  & 室内 \\
-            パン    &  70円  &  室内 \\
-            \hline
-            \end{tabular}
-    \end{table}
-\end{frame}
+% \section{表}
+% \begin{frame}{表の追加}
+%     \begin{table}
+%         \caption{Caption}
+%         \label{table:sample}
+%         \centering
+%             \begin{tabular}{ccc}
+%             \hline
+%             料理    & 値段   &  場所  \\
+%             \hline \hline
+%             チキン  & 200円  & 公園 \\
+%             ピザ    & 300円  & 公園 \\
+%             ご飯    & 100円  & 室内 \\
+%             パン    &  70円  &  室内 \\
+%             \hline
+%             \end{tabular}
+%     \end{table}
+% \end{frame}
 \end{document}

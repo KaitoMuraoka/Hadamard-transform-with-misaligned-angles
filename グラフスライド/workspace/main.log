@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  30 DEC 2022 18:37
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  9 JAN 2023 15:43
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -732,8 +732,8 @@ Missing character: There is no 4 in font nullfont!
 [4
 
 ]
-File: figures/5Qubitk_theory.png Graphic file (type bmp)
-<figures/5Qubitk_theory.png>
+File: figures/5qubits/5Qubitk_theory.png Graphic file (type bmp)
+<figures/5qubits/5Qubitk_theory.png>
 
 
 Package nag Warning: `center' environment in figure.
@@ -749,9 +749,17 @@ Missing character: There is no 4 in font nullfont!
 [5
 
 ]
+File: figures/5qubits/p(k).png Graphic file (type bmp)
+<figures/5qubits/p(k).png>
 
-Package nag Warning: `center' environment in table.
-(nag)                Maybe you want \centering instead on input line 80.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 75.
+
+
+Overfull \hbox (15.36542pt too wide) detected at line 75
+[][][]$[]$[][][][][][][] [][] []$[]$[][][][][][][]
+ []
 
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 4 in font nullfont!
@@ -773,21 +781,21 @@ Package nag Warning: 2 complaints in total.
 
 (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ABF039AF2D9CBC3FF9B09F79ADD71819;202.
+(rerunfilecheck)             Checksum: 12C91CFDA2B8C17D66ECF1BE7FC01736;122.
  ) 
 Here is how much of TeX's memory you used:
- 22412 strings out of 478739
- 441383 string characters out of 5858777
- 726030 words of memory out of 5000000
- 40368 multiletter control sequences out of 15000+600000
- 482500 words of font info for 80 fonts, out of 8000000 for 9000
+ 22438 strings out of 478739
+ 441976 string characters out of 5858777
+ 725938 words of memory out of 5000000
+ 40389 multiletter control sequences out of 15000+600000
+ 487639 words of font info for 99 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,20n,122p,429b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (6 pages, 79444 bytes).
+Output written on main.dvi (6 pages, 78264 bytes).
 
 
 main.dvi -> main.pdf
 [1][2][3][4][5][6]
-52778 bytes written
+66104 bytes written
 
