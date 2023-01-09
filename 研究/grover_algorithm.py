@@ -143,3 +143,34 @@ def noisy_z_grover(nqubits, operate_times, delta):
 
     max_k = np.argmax(result)
     return result, max_k, result[max_k]
+
+# YとZに同じノイズを与える関数
+def noisy_yz_grover(nqubits, operate_times, delta):
+    state = QuantumState(nqubits)
+    state.set_zero_state()
+
+    # 内積を評価するために 解状態 |1...1> を作っておく
+    target_state = QuantumState(nqubits)
+    target_state.set_computational_basis(2 ** nqubits - 1)  # 2**n_qubits-1 は 2進数で 1...1
+
+    # グローバーのアルゴリズムの実行
+    Hadamard = operation.make_yz_noisy_Hadamard(nqubits, delta)
+    U_w = operation.make_U_w(nqubits)
+    U_s = operation.make_U_s(nqubits)
+
+    result = []
+
+    state = QuantumState(nqubits)
+    state.set_zero_state()
+    Hadamard.update_quantum_state(state)
+    hoge = np.linalg.norm(inner_product(state, target_state))
+    result.append(hoge)
+    for k in range(operate_times):
+        U_w.update_quantum_state(state)
+        U_s.update_quantum_state(state)
+        fuga = np.linalg.norm(inner_product(state, target_state))
+        result.append(fuga)
+        # print(fuga)
+
+    max_k = np.argmax(result)
+    return result, max_k, result[max_k]

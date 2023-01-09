@@ -96,3 +96,14 @@ def make_z_noisy_Hadamard(nqubits, delta):
         control_index = i
         U_3.add_gate(U3(control_index, THETA, PHI, LAMBDA + delta))
     return U_3
+
+def make_yz_noisy_Hadamard(nqubits, delta):
+    U_3 = QuantumCircuit(nqubits)
+    THETA = np.pi / 2
+    PHI = 0
+    LAMBDA = np.pi
+    # 全てのQubitにゲートを作用
+    for i in range(nqubits):
+        control_index = i
+        U_3.add_gate(U3(control_index, THETA + delta, PHI, LAMBDA + delta))
+    return U_3

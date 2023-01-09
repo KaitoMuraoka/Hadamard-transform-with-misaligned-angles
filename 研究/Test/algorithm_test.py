@@ -30,6 +30,8 @@ class TestAlgorithm(unittest.TestCase):
     revolution_result, revolution_maxk = algorithm.revolution_grover(nqubit, times)
     noisy_y_result, noisy_y_maxk, noisy_y_pk = algorithm.noisy_y_grover(nqubit, times, 0)
     noisy_z_result, noisy_z_maxk, noisy_z_pk = algorithm.noisy_z_grover(nqubit, times, 0)
+    noisy_yz_result, noisy_yz_maxk, noisy_yz_pk = algorithm.noisy_yz_grover(nqubit, times, 0)
+
     def test_theory_grover(self, p_kth = p_kth, k_theory = k_theory):
         ans = 0.9722718241315015
         k_ans = 2
@@ -93,3 +95,22 @@ class TestAlgorithm(unittest.TestCase):
         self.assertTrue(maxk)
         self.assertTrue(pk)
 
+# 理想のグローバーとy、z回転のグローバーのテスト
+    def test_yz_grover(self, nqubits = 3, times = 4):
+        result_theory = self.result_theory
+        k_theory = self.k_theory
+        p_kth = self.p_kth
+
+        result_noisy_yz = self.noisy_yz_result
+        maxk_noisy_yz = self.noisy_yz_maxk
+        pk_noisy_yz = self.noisy_yz_pk
+
+        result = np.allclose(result_theory, result_noisy_yz)
+        print(f'result theory: {result_theory}')
+        print(f'result noisy z: {result_noisy_yz}')
+        maxk = np.allclose(k_theory, maxk_noisy_yz)
+        pk = np.allclose(p_kth, pk_noisy_yz)
+
+        self.assertTrue(result)
+        self.assertTrue(maxk)
+        self.assertTrue(pk)
