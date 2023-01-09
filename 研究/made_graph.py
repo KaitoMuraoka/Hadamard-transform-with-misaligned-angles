@@ -98,6 +98,33 @@ def noisy_z_graph(n, nqubits, times):
         p_kth_array.append(p_kth)
     return k_k_theory_array, p_k_array, p_kth_array
 
+# noisy_yz_graph
+def noisy_yz_graph(n, nqubits, times):
+    result_theory, k_theory, p_kth = algorithm.grover(nqubits, times)
+    noises = []
+    noises_array = []
+
+    for i in range(0, 2*n + 1):
+        sample = np.pi * i
+        result = sample / n
+        noises.append(result)
+        noises_array.append(f'{i}π/{n}')
+
+    k_k_theory_array = []
+    p_k_array = []
+    p_kth_array = []
+
+    for i in range(len(noises)):
+        noise = noises[i]
+        result, max_k, p_k = algorithm.noisy_yz_grover(nqubits, times, noise)
+        k_k_theory = max_k - k_theory
+        p_k = result[max_k]
+        p_kth = result[k_theory]
+        k_k_theory_array.append(k_k_theory)
+        p_k_array.append(p_k)
+        p_kth_array.append(p_kth)
+    return k_k_theory_array, p_k_array, p_kth_array
+
 # K - K_throryのグラフ化
 def different_of_k_graph(x, y, yticks_start, yticks_end):
     fig = plt.figure()
