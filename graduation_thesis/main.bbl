@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{QuantumComputation&Infomation2}
+Issac L.~Chuang Michael A.~Nielsen.
+\newblock
+  量子コンピュータと量子通信^^e2^^85^^a1-量子コンピュータとアルゴリズム-.
+\newblock オーム社, 2022年.
+
 \bibitem{QuantumDojo}
 Qulacs.
 \newblock Quantum native dojo.

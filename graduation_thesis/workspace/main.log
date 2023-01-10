@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  11 JAN 2023 00:07
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  11 JAN 2023 00:58
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -614,7 +614,7 @@ LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <8.99994> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 77.
-) (./basicContent/multipleQubit.tex Excluding 'comment' comment. [3]) (./basicContent/multipleQubit.tex Excluding 'comment' comment.) (./basicContent/quantumjAlgorithm.tex Excluding 'comment' comment.) (./basicContent/grover.tex Excluding 'comment' comment. [4]
+) (./basicContent/multipleQubit.tex Excluding 'comment' comment. [3]) (./basicContent/multipleQubit.tex Excluding 'comment' comment.) (./basicContent/quantumjAlgorithm.tex Excluding 'comment' comment.) [4] (./basicContent/grover.tex Excluding 'comment' comment.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 19.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -634,11 +634,12 @@ LaTeX Warning: Reference `eq: Uws' on page 6 undefined on input line 81.
 
 LaTeX Warning: Reference `eq: UsUws' on page 6 undefined on input line 100.
 
+[6]
 
-LaTeX Warning: Reference `eq: hoge' on page 6 undefined on input line 123.
+LaTeX Warning: Reference `eq: hoge' on page 7 undefined on input line 123.
 
 
-LaTeX Warning: Reference `fig:rootate' on page 6 undefined on input line 125.
+LaTeX Warning: Reference `fig:rootate' on page 7 undefined on input line 125.
 
 LaTeX Font Info:    Calculating math sizes for size <8.99994> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -652,14 +653,13 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.49997pt on input line 141.
 
-LaTeX Warning: Reference `fig:rootate2' on page 6 undefined on input line 162.
+LaTeX Warning: Reference `fig:rootate2' on page 7 undefined on input line 162.
 
-[6] [7]
 
 Package nag Warning: \label in float, but not after \caption on input line 168.
 
-[8])) (./subject.tex) (./summaryAndConclusion.tex Excluding 'comment' comment.) (./main.bbl
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 6.
+[7])) (./subject.tex [8]) (./summaryAndConclusion.tex Excluding 'comment' comment.) (./main.bbl
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 11.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
@@ -678,65 +678,67 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16864 strings out of 478739
- 362619 string characters out of 5858777
- 642795 words of memory out of 5000000
- 34943 multiletter control sequences out of 15000+600000
+ 16865 strings out of 478739
+ 362651 string characters out of 5858777
+ 638799 words of memory out of 5000000
+ 34944 multiletter control sequences out of 15000+600000
  545309 words of font info for 110 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  85i,17n,89p,871b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (10 pages, 59180 bytes).
+Output written on main.dvi (10 pages, 61364 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: jplain.bst
 Database file #1: references.bib
-You've used 1 entry,
+Warning--can't use both author and editor fields in QuantumComputation&Infomation2
+You've used 2 entries,
             2620 wiz_defined-function locations,
-            597 strings with 4635 characters,
-and the built_in function-call counts, 271 in all, are:
-= -- 19
-> -- 7
+            604 strings with 4812 characters,
+and the built_in function-call counts, 539 in all, are:
+= -- 38
+> -- 14
 < -- 0
-+ -- 3
-- -- 2
-* -- 7
-:= -- 44
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 4
++ -- 6
+- -- 4
+* -- 16
+:= -- 83
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 13
-empty$ -- 30
-format.name$ -- 3
-if$ -- 59
+cite$ -- 3
+duplicate$ -- 32
+empty$ -- 59
+format.name$ -- 6
+if$ -- 119
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 12
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 6
 quote$ -- 0
-skip$ -- 16
+skip$ -- 30
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 10
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 11
-is.kanji.str$ -- 7
+type$ -- 6
+warning$ -- 1
+while$ -- 4
+width$ -- 3
+write$ -- 21
+is.kanji.str$ -- 15
+(There was 1 warning)
 
 main.dvi -> main.pdf
 [1][2][3][4][5][6][7][8][9][10]
-144732 bytes written
+156196 bytes written
 
