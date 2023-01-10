@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  11 JAN 2023 00:58
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  11 JAN 2023 01:12
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -678,15 +678,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16865 strings out of 478739
- 362651 string characters out of 5858777
+ 16872 strings out of 478739
+ 362775 string characters out of 5858777
  638799 words of memory out of 5000000
- 34944 multiletter control sequences out of 15000+600000
+ 34951 multiletter control sequences out of 15000+600000
  545309 words of font info for 110 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  85i,17n,89p,871b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (10 pages, 61364 bytes).
+Output written on main.dvi (10 pages, 61368 bytes).
 
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
@@ -740,5 +740,5 @@ is.kanji.str$ -- 15
 
 main.dvi -> main.pdf
 [1][2][3][4][5][6][7][8][9][10]
-156196 bytes written
+155320 bytes written
 
