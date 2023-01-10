@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  10 JAN 2023 16:52
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  10 JAN 2023 23:31
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -335,47 +335,47 @@ Output written on main.dvi (1 page, 7204 bytes).
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: junsrt.bst
+The style file: jplain.bst
 Database file #1: references.bib
 You've used 3 entries,
-            2270 wiz_defined-function locations,
-            552 strings with 4369 characters,
-and the built_in function-call counts, 505 in all, are:
-= -- 26
-> -- 12
+            2620 wiz_defined-function locations,
+            606 strings with 4854 characters,
+and the built_in function-call counts, 743 in all, are:
+= -- 53
+> -- 21
 < -- 0
-+ -- 6
-- -- 3
-* -- 4
-:= -- 67
++ -- 9
+- -- 6
+* -- 19
+:= -- 112
 add.period$ -- 7
 call.type$ -- 3
-change.case$ -- 1
+change.case$ -- 10
 chr.to.int$ -- 0
 cite$ -- 3
-duplicate$ -- 39
-empty$ -- 67
-format.name$ -- 6
-if$ -- 119
+duplicate$ -- 45
+empty$ -- 80
+format.name$ -- 9
+if$ -- 163
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 0
 newline$ -- 16
-num.names$ -- 3
-pop$ -- 27
+num.names$ -- 6
+pop$ -- 32
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 9
 quote$ -- 0
-skip$ -- 32
+skip$ -- 46
 stack$ -- 0
-substring$ -- 0
+substring$ -- 15
 swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 12
 warning$ -- 0
-while$ -- 3
+while$ -- 6
 width$ -- 4
 write$ -- 27
 is.kanji.str$ -- 23

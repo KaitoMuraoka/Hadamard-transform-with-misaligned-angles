@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  10 JAN 2023 19:36
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.12.12)  11 JAN 2023 00:07
 entering extended mode
  restricted \write18 enabled.
 **main.tex
@@ -256,7 +256,10 @@ LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
- Excluding comment 'comment') (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+ Excluding comment 'comment') (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks29
 \pgfutil@tempdima=\dimen185
 \pgfutil@tempdimb=\dimen186
@@ -456,7 +459,7 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 18.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./main.aux
@@ -466,96 +469,96 @@ LaTeX Warning: Label `eq: QuantumComputationAndQuantumInfomation.1.5' multiply d
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 17.
-Package nag Info: Command \bf not defined, skipping amendment on input line 17.
-Package nag Info: Command \it not defined, skipping amendment on input line 17.
-Package nag Info: Command \rm not defined, skipping amendment on input line 17.
-Package nag Info: Command \sc not defined, skipping amendment on input line 17.
-Package nag Info: Command \sf not defined, skipping amendment on input line 17.
-Package nag Info: Command \sl not defined, skipping amendment on input line 17.
-Package nag Info: Command \tt not defined, skipping amendment on input line 17.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 17.
-Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 17.
-Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 17.
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 17.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 17.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 17.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 17.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 18.
+Package nag Info: Command \bf not defined, skipping amendment on input line 18.
+Package nag Info: Command \it not defined, skipping amendment on input line 18.
+Package nag Info: Command \rm not defined, skipping amendment on input line 18.
+Package nag Info: Command \sc not defined, skipping amendment on input line 18.
+Package nag Info: Command \sf not defined, skipping amendment on input line 18.
+Package nag Info: Command \sl not defined, skipping amendment on input line 18.
+Package nag Info: Command \tt not defined, skipping amendment on input line 18.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 18.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 18.
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 18.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 18.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 18.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 18.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 18.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 17.0pt on input line 18.
+(Font)              scaled to size 17.0pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 17.0pt on input line 18.
+(Font)              scaled to size 17.0pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 18.
+(Font)              scaled to size 14.0pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 18.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 18.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 18.
+(Font)              scaled to size 14.0pt on input line 19.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 19.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 19.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 18.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 19.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 18.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 19.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 18.
+(Font)              <14> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 18.
+(Font)              <9.79996> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 18.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 18.
+(Font)              scaled to size 9.79996pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 18.
+(Font)              scaled to size 7.0pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 18.
+(Font)              scaled to size 12.0pt on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 18.
+(Font)              scaled to size 12.0pt on input line 19.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
+(Font)              scaled to size 14.0pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 19.
+(Font)              scaled to size 14.0pt on input line 20.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 20.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <14> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
+(Font)              scaled to size 14.0pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <14> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
+(Font)              scaled to size 14.0pt on input line 20.
  (./main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 1.
@@ -567,20 +570,20 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1]
+ [1] (./overview.tex Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 9.
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
- (./basicInfomation.tex Excluding 'comment' comment.
+(Font)              scaled to size 12.0pt on input line 9.
+) (./basicInfomation.tex Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 10.0pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
@@ -612,50 +615,54 @@ LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <8.99994> not available
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 77.
 ) (./basicContent/multipleQubit.tex Excluding 'comment' comment. [3]) (./basicContent/multipleQubit.tex Excluding 'comment' comment.) (./basicContent/quantumjAlgorithm.tex Excluding 'comment' comment.) (./basicContent/grover.tex Excluding 'comment' comment. [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 20.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 19.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [5]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 82.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
+(Font)              scaled to size 10.0pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 82.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
+(Font)              scaled to size 10.0pt on input line 81.
 
 
-LaTeX Warning: Reference `eq: Uws' on page 6 undefined on input line 82.
+LaTeX Warning: Reference `eq: Uws' on page 6 undefined on input line 81.
 
 
-LaTeX Warning: Reference `eq: UsUws' on page 6 undefined on input line 101.
+LaTeX Warning: Reference `eq: UsUws' on page 6 undefined on input line 100.
 
 
-LaTeX Warning: Reference `eq: hoge' on page 6 undefined on input line 124.
+LaTeX Warning: Reference `eq: hoge' on page 6 undefined on input line 123.
 
 
-LaTeX Warning: Reference `fig:rootate' on page 6 undefined on input line 126.
+LaTeX Warning: Reference `fig:rootate' on page 6 undefined on input line 125.
 
-LaTeX Font Info:    Calculating math sizes for size <8.99994> on input line 142.
+LaTeX Font Info:    Calculating math sizes for size <8.99994> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.99994> on input line 142.
+(Font)              <8.99994> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.29993> on input line 142.
+(Font)              <6.29993> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.49997> on input line 142.
+(Font)              <4.49997> on input line 141.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.29993pt on input line 142.
+(Font)              scaled to size 6.29993pt on input line 141.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 142.
+(Font)              scaled to size 4.49997pt on input line 141.
 
-LaTeX Warning: Reference `fig:rootate2' on page 6 undefined on input line 163.
+LaTeX Warning: Reference `fig:rootate2' on page 6 undefined on input line 162.
 
 [6] [7]
 
-Package nag Warning: \label in float, but not after \caption on input line 169.
+Package nag Warning: \label in float, but not after \caption on input line 168.
 
-[8])) (./subject.tex)
+[8])) (./subject.tex) (./summaryAndConclusion.tex Excluding 'comment' comment.) (./main.bbl
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 6.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
 ***** List of packages loaded by `plautopatch': *****
  pxpgfrcs, pxpgfmark.
 *****************************************************
@@ -671,18 +678,65 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16713 strings out of 478739
- 360089 string characters out of 5858777
- 641699 words of memory out of 5000000
- 34809 multiletter control sequences out of 15000+600000
- 544998 words of font info for 109 fonts, out of 8000000 for 9000
+ 16864 strings out of 478739
+ 362619 string characters out of 5858777
+ 642795 words of memory out of 5000000
+ 34943 multiletter control sequences out of 15000+600000
+ 545309 words of font info for 110 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 85i,17n,89p,871b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,17n,89p,871b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (10 pages, 57304 bytes).
+Output written on main.dvi (10 pages, 59180 bytes).
 
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: jplain.bst
+Database file #1: references.bib
+You've used 1 entry,
+            2620 wiz_defined-function locations,
+            597 strings with 4635 characters,
+and the built_in function-call counts, 271 in all, are:
+= -- 19
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 7
+:= -- 44
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 13
+empty$ -- 30
+format.name$ -- 3
+if$ -- 59
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 12
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 16
+stack$ -- 0
+substring$ -- 5
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 11
+is.kanji.str$ -- 7
 
 main.dvi -> main.pdf
 [1][2][3][4][5][6][7][8][9][10]
-136384 bytes written
+144732 bytes written
 
