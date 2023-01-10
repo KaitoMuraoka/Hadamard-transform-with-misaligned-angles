@@ -55,7 +55,7 @@ $n$を量子ビット数とすると、$N = 2^n$の要素からなるデータ�
 $w$は検索したい値である。
 これを用いいると、$\ket{s}$は、
 \begin{equation}
-    \label{eq: Uws}
+    \label{eq:Uws}
     \begin{split}
         U_w &= \frac{1}{\sqrt{2^n}} \sum_{x = 0, x \ne w}^{2^n - 1} U_w \ket{x} + \frac{1}{\sqrt{2^n}}U_w \ket{x} \\
         &= \frac{1}{\sqrt{2^n}} \sum_{x = 0, x \ne w}^{2^n - 1} \ket{x} - \frac{1}{\sqrt{2^n}} \ket{w} \\
@@ -86,7 +86,7 @@ $w$は検索したい値である。
 % \end{equation}
 
 \begin{equation}
-    \label{eq: UsUws}
+    \label{eq:UsUws}
     \begin{split}
         U_s U_w \ket{s} &= \ket{s} - \frac{2}{\sqrt{2}} \left( \frac{2}{\sqrt{2^n}} \ket{s} - \ket{w} \right)\\
         &= \frac{2^n - 4}{2^n} \ket{s} + \frac{2}{\sqrt{2^n}} \ket{w}\\
@@ -115,7 +115,7 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
 \end{equation}
 全ての状態の重ね合せ状態$\ket{s}$は次のように表すことができるので、2次元平面ベクトルであることがわかる。
 \begin{equation}
-    \label{eq: hgoe}
+    \label{eq:hgoe}
     \ket{s} = \sqrt{\frac{N - M}{N}} \ket{w^{\perp}} + \sqrt{\frac{M}{N}}\ket{w}
 \end{equation}
 
@@ -140,7 +140,7 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
         \coordinate (thrta_0) at (1,0) node at (thrta_0) [above right] {$\theta / 2$};
     \end{tikzpicture}
     \caption{全ての状態の重ね合わせ状態$\ket{s}$}
-    \label{fig:rootate}
+    % \label{fig:rootate}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -158,7 +158,7 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
         \draw [-](1,0) arc (0:-20:1.4);
     \end{tikzpicture}
     \caption{$\ket{s}$に$U_w$を作用}
-    \label{fig:rootate2}
+    \label{rootate2}
 \end{figure}
 次に、$\ket{s}$に$U_w$をかけることにより、$\ket{w^{\perp}}$を軸に反転すると、図\ref{fig:rootate2}のようになる。
 
@@ -166,6 +166,7 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
 
 \begin{figure}[htbp]
     \centering
+    \label{rootate}
     \begin{tikzpicture}
         \draw[->,>=stealth,semithick] (-0.5,0)--(4,0)node[above]{$\ket{w^{\perp}}$}; %x軸
         \draw[->,>=stealth,semithick] (0,-0.5)--(0,3.5)node[right]{$\ket{w}$}; %y軸
@@ -183,7 +184,6 @@ $\ket{w}$に直行するベクトル$\ket{w^{\perp}}$を用いた平面を考え
         \draw [-](1,0) arc (0:37.5:1.4);
     \end{tikzpicture}
     \caption{$U_w\ket{s}$に$U_s$を作用}
-    \label{fig:rootate}
 \end{figure}
 
 以上より、平面ベクトル内で、角度$\theta$だけの回転が行われ、$\ket{w}$を測定する確率が上昇することがわかる。
