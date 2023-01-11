@@ -1,0 +1,33 @@
+\begin{comment}
+    ここでは任意の回転ゲートにおけるアダマール演算子について記述する。
+\end{comment}
+ここでは任意の回転ゲートにおけるアダマール演算子について記述する。
+
+グローバーのアルゴリズムで初期状態を用意するために使用した
+アダマール演算子$H$は、式\ref{eq: hoge}を用いて$Z-Y$回転行列に分解すると、
+\begin{equation}
+    \begin{split}
+        H &= \frac{1}{\sqrt{2}} \begin{pmatrix}
+            1 & 1 \\
+            1 & -1
+        \end{pmatrix} \\
+        &= \begin{pmatrix}
+            \cos{\frac{\pi}{4}} & -e^{i\pi} \sin{\frac{\pi}{4}} \\
+            e^{i0} \sin{\frac{\pi}{4}} & e^{i \pi} \cos{\frac{\pi}{4}}
+        \end{pmatrix} \\
+        &= U(\frac{1}{2}\pi, 0, \pi)
+    \end{split}
+\end{equation}
+と表すことができる。
+
+本研究では、このアダマール演算子$H$に$y$軸方向のズレ$\delta_y$, $z$軸方向のズレ$\delta_z$が生じている場合を考え、
+
+\begin{itemize}
+    \item 初期状態に$y$軸方向のズレ$\delta_y$を加えたグローバーのアルゴリズム
+    \item 初期状態に$z$軸方向のズレ$\delta_z$を加えたグローバーのアルゴリズム
+    \item 初期状態に$y$軸方向、$z$軸方向のズレ$\delta_y, \delta_z$を加えたグローバーのアルゴリズム
+\end{itemize}
+
+の3つの場合を量子ビット数を増やして数値計算を行う。
+
+

@@ -10,4 +10,13 @@ Qulacs.
 \newblock Quantum native dojo.
 \newblock \url{https://github.com/qulacs/quantum-native-dojob}.
 
+\bibitem{QulacsGitHub}
+Qulacs.
+\newblock Qulacs document.
+\newblock \url{https://github.com/qulacs/qulacs}.
+
+\bibitem{QuantumComputingFundamentalsAndPhysicsContacts}
+藤井啓祐.
+\newblock 量子コンピュータの基礎と物理の接点, 2017年6月8日.
+
 \end{thebibliography}
